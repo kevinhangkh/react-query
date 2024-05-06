@@ -9,7 +9,7 @@ export const addProduct = async (product: { title: string }) => {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      title: 'BMW Pencil',
+      title: product.title,
       brand: 'Some brand',
       description: 'Some description',
       price: 100,
